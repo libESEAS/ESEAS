@@ -25,7 +25,7 @@ Before compiling, you must run the `configure` script.  To run, type
 `./configure --help` for details.
 
 After successfully running `configure`, type `make` to build the
-`QUESO` library
+`ESEAS` library
 
 Then type `make install` to install it in the directory previously
 specified by the `--prefix` option of the `configure` script. -->
@@ -40,7 +40,7 @@ Documentation
 License
 -------
 
-See `LICENSE` file distributed with `QUESO` for more information.
+See `LICENSE` file distributed with `ESEAS` for more information.
 
 Contributing
 ------------
@@ -69,7 +69,7 @@ article describing the use of the `ESEAS` library:
   booktitle = {Euro-Par 2011: Parallel Processing Workshops},
   pages = {398--407},
   publisher = {Springer},
-  title = {{The parallel C++ statistical library ‘QUESO’: Quantification of
+  title = {{The parallel C++ statistical library ‘ESEAS’: Quantification of
     Uncertainty for Estimation, Simulation and Optimization}},
   url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44},
   year = {2012}
