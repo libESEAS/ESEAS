@@ -3,13 +3,7 @@ The `ESEAS` Library
 
 `ESEAS` stands for Exact Sequence in Elements of All Shapes.
 
-`ESEAS` is a collection of shape function routines for finite element
-software. It is mostly written in the Fortran 77 standard although
-uses some features from Fortran 90+. It is designed to be can run over
-ported into pre-existing finite element softwares and has been tested
-using HP3D by the Electromagnetics and Acoustics Group at the Institute
-for Computational Engineering Sciences at The University of Texas at
-Austin.
+`ESEAS` is a collection of shape function routines for finite element software. It is mostly written in the Fortran 77 standard although uses some features from Fortran 90+. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
 
 Installation
 ------------
