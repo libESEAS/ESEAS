@@ -7,7 +7,7 @@ The `ESEAS` Library
 software. It is mostly written in the Fortran 77 standard although
 uses some features from Fortran 90+. It is designed to be can run over
 ported into pre-existing finite element softwares and has been tested
-using HP3D by the Electromagnetics and Acoustics Group at the Institue
+using HP3D by the Electromagnetics and Acoustics Group at the Institute
 for Computational Engineering Sciences at The University of Texas at
 Austin.
 
