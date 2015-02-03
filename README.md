@@ -55,7 +55,7 @@ Support
 If you have questions or need help with using or contributing to `ESEAS`,
 feel free to email Brendan at:
 
-- [email](brendan@ices.utexas.edu)
+- [email](mailto:brendan@ices.utexas.edu)
 
 Citing ESEAS
 -------
