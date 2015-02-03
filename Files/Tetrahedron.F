@@ -1,4 +1,29 @@
-c Routines:
+c-----------------------------------------------------------------------bl-
+c--------------------------------------------------------------------------
+c
+c ESEAS - a library to support the construction of hierarchical,
+c orientation-embedded shape functions for the Exact Sequence in Elements
+c of All Shapes.
+c
+c Copyright (C) 2015 Electromagnetics and Acoustics Group (EAG), Institute
+c for Computational Engineering and Sciences (ICES), The University of
+c Texas at Austin
+c
+c This library is free software; you can redistribute it and/or
+c modify it under the terms of the Version 2.1 GNU Lesser General
+c Public License as published by the Free Software Foundation.
+c
+c This library is distributed in the hope that it will be useful,
+c but WITHOUT ANY WARRANTY; without even the implied warranty of
+c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+c Lesser General Public License for more details.
+c
+c You should have received a copy of the GNU Lesser General Public
+c License along with this library; if not, write to the Free Software
+c Foundation, Inc. 51 Franklin Street, Fifth Floor,
+c Boston, MA  02110-1301  USA
+c
+c-----------------------------------------------------------------------el-
 c  - shape3DHTet
 c  - shape3DETet
 c  - shape3DVTet
