@@ -1,10 +1,3 @@
-<!-- Need this line to convert latex -->
-<html>
-<head>
-<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
-</head>
-<body>
-
 The `ESEAS` Library
 =================
 
@@ -85,3 +78,5 @@ Please add the following citation to any paper, technical report, or article whi
 <!-- volume = {}, -->
 <!-- url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44}, -->
 
+<!-- Need this line to convert latex -->
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
