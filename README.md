@@ -25,7 +25,7 @@ i.e.
 
     <img src="http://latex.codecogs.com/gif.latex?H^1\xrightarrow{\,\,\nabla\,\,}H(\mathrm{curl})\xrightarrow{\nabla\times}H(\mathrm{div})\xrightarrow{\,\nabla\cdot\,}L^2\,." border="0"/>
 
-For a more thorough account of these spaces, see the report mentioned in the `Documentation` section.
+For a more thorough account of these spaces, see the report mentioned in `Documentation` section.
 
 `ESEAS` is a collection of shape function routines for finite element software. It is written in Fortran 90 but using fixed format (.F) so it is compatible down to Fortran 77. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
 
