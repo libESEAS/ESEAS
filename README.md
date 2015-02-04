@@ -9,9 +9,7 @@ Denote by <span lang="latex">\Omega</span>, any arbitrary element listed above. 
 i.e.
 
 -   **1D:**
-    <div lang="latex">
-    H^1(\Omega) \stackrel{\nabla}{\longrightarrow} L^2(\Omega)\, .
-    </div>
+    <img src="http://latex.codecogs.com/gif.latex?H^1(\Omega)\stackrel{\nabla}{\longrightarrow}L^2(\Omega)\,." border="0"/>
 
 - **2D:**
     <div lang="latex">
