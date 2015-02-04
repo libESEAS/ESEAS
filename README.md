@@ -29,7 +29,7 @@ For a more thorough account of these spaces, see the report mentioned in `Docume
 
 `ESEAS` is a collection of hierarchical shape function routines for finite element software. It is written in Fortran 90 but using fixed format (.F) so it is compatible down to Fortran 77. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
 
-`ESEAS` is written for orientation embedded shape functions (see [Gatto 2010](http://www.sciencedirect.com/science/article/pii/S0168874X10000065)) but can used by hp finite element software which do not incorporate this characteristic.
+`ESEAS` is written for orientation embedded shape functions (see [Gatto 2010](http://www.sciencedirect.com/science/article/pii/S0168874X10000065)) but can used by hp finite element software which do not incorporate this feature.
 
 `ESEAS` is free to use *provided* that the library is cited (citation information below).
 
