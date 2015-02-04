@@ -1,28 +1,43 @@
 The `ESEAS` Library
 =================
 
-`ESEAS` stands for Exact Sequence in Elements of All Shapes.
+`ESEAS` stands for Exact Sequence for Elements of All Shapes. By "Elements of All Shapes," we mean the following geometries in <span lang="latex">\mathbb{R}^n</span>, <span lang="latex">n=1,2,3</span>.
 
-`ESEAS` is a collection of shape function routines for finite element software. It is mostly written in the Fortran 77 standard although uses some features from Fortran 90+. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
+![ElementsAllShapes](https://cloud.githubusercontent.com/assets/10820180/6026267/0f6fe8d0-ab9f-11e4-9391-f86bd8ce80aa.png "Elements of all shapes.")
+
+Denote by <span lang="latex">\Omega</span>, any arbitrary element listed above. By "Exact sequence" we specifically mean the de Rham complexes in <span lang="latex">\Omega\subset\mathbb{R}^n</span>, <span lang="latex">n=1,2,3</span>.
+i.e.
+
+-   **1D:**
+    <div lang="latex">
+    H^1(\Omega) \stackrel{\nabla}{\longrightarrow} L^2(\Omega)\, .
+    </div>
+
+- **2D:**
+    <div lang="latex">
+    H^1 \xrightarrow{\,\,\nabla\,\,} H(\mathrm{curl}) \xrightarrow{\nabla\times} L^2 \,.
+    </div>
+
+    **Rotated 2D:**
+    <div lang="latex">
+    H^1 \xrightarrow{\mathrm{curl}} H(\mathrm{div}) \xrightarrow{\,\nabla\cdot\,} L^2 \,.
+    </div>
+
+-   **3D:**
+    <div lang="latex">
+    H^1 \xrightarrow{\,\,\nabla\,\,} H(\mathrm{curl}) \xrightarrow{\nabla\times} H(\mathrm{div}) \xrightarrow{\,\nabla\cdot\,} L^2 \, .
+    </div>
+
+For a more thorough account of these spaces, see the report mentioned in the `Documentation` section.
+
+`ESEAS` is a collection of shape function routines for finite element software. It is written in Fortran 90 but using fixed format (.F) so it is compatible down to Fortran 77. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
+
+`ESEAS` is free to use *provided* that the library is cited (citation information below).
 
 Installation
 ------------
 
-At this moment, the testing routines for ESEAS relying upon the larger HP3D finite element software which is not publicly available. For this reason, there is no installation software.
-
-<!--
-If you do not have a `configure` script in the top level directory,
-run `bootstrap` to generate a configure script using autotools.
-
-Before compiling, you must run the `configure` script.  To run, type
-`./configure`.  Additional options may be provided if desired.  Run
-`./configure --help` for details.
-
-After successfully running `configure`, type `make` to build the
-`ESEAS` library
-
-Then type `make install` to install it in the directory previously
-specified by the `--prefix` option of the `configure` script. -->
+At this moment, the all testing routines for ESEAS rely upon the HP3D finite element software which is not publicly available. For this reason, there is no installation software.
 
 Documentation
 -------------
@@ -39,33 +54,29 @@ See `LICENSE` file distributed with `ESEAS` for more information.
 Contributing
 ------------
 
-Contributions are very welcome.  If you wish to contribute, please
-take a few moments to review the [branching model](http://nvie.com/posts/a-successful-git-branching-model/)
-`ESEAS` utilizes.
+Contributions are very welcome.  If you wish to contribute, please take a few moments to review the [branching model](http://nvie.com/posts/a-successful-git-branching-model/) which `ESEAS` utilizes.
 
 Support
 -------
 
-If you have questions or need help with using or contributing to `ESEAS`,
-feel free to email Brendan at:
+If you have questions or need help with using or contributing to `ESEAS`, feel free to email Brendan at:
 
 - [email](mailto:brendan@ices.utexas.edu)
 
 Citing ESEAS
 -------
-Please add the following citation to any paper, technical report or
-article describing the use of the `ESEAS` library:
+Please add the following citation to any paper, technical report, or article which incorporated the `ESEAS` library:
 
-*BIBTEX FOR PAPERS*
-<!-- ```bibtex
-@inproceedings{Prudencio2012,
-  author = {Prudencio, Ernesto E and Schulz, Karl W},
-  booktitle = {Euro-Par 2011: Parallel Processing Workshops},
-  pages = {398--407},
-  publisher = {Springer},
-  title = {{The parallel C++ statistical library ‘ESEAS’: Quantification of
-    Uncertainty for Estimation, Simulation and Optimization}},
-  url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44},
-  year = {2012}
-} -->
+```bibtex
+@article{Fuentes2015,
+  title = {{Orientation Embedded Finite Element (FE) Shape Functions for the Exact Sequence Elements of All Shapes}},
+  author = {Fuentes, Keith, Demkowicz},
+  journal = {ICES Report},
+  year = {2015}
+}
 ```
+<!-- volume = {}, -->
+<!-- url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44}, -->
+
+<!-- Need this line to convert latex -->
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
