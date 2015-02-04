@@ -6,6 +6,7 @@ The `ESEAS` Library
 ![ElementsAllShapes](https://cloud.githubusercontent.com/assets/10820180/6026267/0f6fe8d0-ab9f-11e4-9391-f86bd8ce80aa.png "Elements of all shapes.")
 
 Denote by <span lang="latex">\Omega</span>, any arbitrary element listed above. By "Exact sequence" we specifically mean the de Rham complexes in <img src="http://latex.codecogs.com/gif.latex?\Omega\subset\mathbb{R}^n" border="0"/>, <img src="http://latex.codecogs.com/gif.latex?n=1,2,3." border="0"/>
+
 i.e.
 
 -   **1D:**
@@ -73,6 +74,3 @@ Please add the following citation to any paper, technical report, or article whi
 ```
 <!-- volume = {}, -->
 <!-- url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44}, -->
-
-<!-- Need this line to convert latex -->
-<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
