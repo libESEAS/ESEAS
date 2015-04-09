@@ -2,7 +2,7 @@ c-----------------------------------------------------------------------bl-
 c--------------------------------------------------------------------------
 c
 c ESEAS - a library to support the construction of hierarchical,
-c orientation-embedded shape functions for the Exact Sequence in Elements
+c orientation-embedded shape functions for the Exact Sequence for Elements
 c of All Shapes.
 c
 c Copyright (C) 2015 Electromagnetics and Acoustics Group (EAG), Institute

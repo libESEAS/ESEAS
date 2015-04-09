@@ -41,9 +41,7 @@ At this moment, the all testing routines for ESEAS rely upon the HP3D finite ele
 Documentation
 -------------
 
-`ESEAS` is based off the shape function construction documented in
-*LINK TO ICES REPORT*
-<!-- [here](http://libqueso.github.io/queso/docs/html/). -->
+`ESEAS` is based off the shape function construction documented [here](https://www.ices.utexas.edu/media/reports/2015/1507.pdf).
 
 License
 -------
@@ -58,7 +56,7 @@ Contributions are very welcome.  If you wish to contribute, please take a few mo
 Support
 -------
 
-If you have questions or need help with using or contributing to `ESEAS`, feel free to email Brendan at:
+If you have questions or need help with using or contributing to `ESEAS`, feel free to email us at:
 
 - [email](mailto:brendan@ices.utexas.edu)
 
@@ -68,8 +66,9 @@ Please add the following citation to any paper, technical report, or article whi
 
 ```bibtex
 @article{Fuentes2015,
-  title = {{Orientation Embedded Finite Element (FE) Shape Functions for the Exact Sequence Elements of All Shapes}},
-  author = {Fuentes, Keith, Demkowicz},
+  title = {{Orientation Embedded High Order Shape Functions for
+the Exact Sequence Elements of All Shapes}},
+  author = {Fuentes, Keith, Demkowicz, Nagaraj},
   journal = {ICES Report},
   year = {2015}
 }
