@@ -24,6 +24,7 @@ c Foundation, Inc. 51 Franklin Street, Fifth Floor,
 c Boston, MA  02110-1301  USA
 c
 c-----------------------------------------------------------------------el-
+c Routines:
 c  - TraceEshapeH
 c  - TraceEshapeE
 c  - TraceEshapeV
@@ -176,6 +177,7 @@ c
       double precision, intent(out) :: ShapE(MAXP)
       double precision :: Mu(0:1),DMu(0:1),GMu(0:1),GDMu(0:1)
       double precision :: homP(0:Nord-1)
+      double precision :: jac
 c
 c  ...debugging flag
       iprint=0
@@ -202,7 +204,8 @@ c    ...construct the shape functions
         do i=minI,maxI
           m=m+1
 c
-          ShapE(m) = homP(i)
+          jac = GDMu(1)
+          ShapE(m) = homP(i)*jac
         enddo
       endif
 c
@@ -507,7 +510,7 @@ c
 c     latest revision:  - Nov 14
 c
 c     purpose:          - 2D face trace of 3D H(curl) face functions
-c                         (these happen to be oriented 2D H(curl) 
+c                         (these happen to be oriented 2D H(curl)
 c                         'bubbles')
 c
 c     arguments:
@@ -592,7 +595,7 @@ c      ...loop over families
             m=famctr+fam-1
             abc = cshift((/0,1,2/),fam)
 c        ...construct the shape functions
-            call AncETri(GNu(abc),GDNu(1:N,abc),Nord,IdecF,N, 
+            call AncETri(GNu(abc),GDNu(1:N,abc),Nord,IdecF,N,
      .                                                   ETri,CurlETri)
             do nij=minIJ,maxIJ
               do i=minI,nij-minJ
@@ -737,8 +740,7 @@ c
 c     latest revision:  - Nov 14
 c
 c     purpose:          - 2D face trace of 3D H(div) face functions
-c                         (these are oriented 2D L2 face funtions -
-c                         not 'bubbles')
+c                         these are oriented 2D L2 face funtions
 c
 c     arguments:
 c
@@ -786,6 +788,7 @@ c
         double precision :: Nu(0:2),DNu(2,0:2)
         double precision :: GNu(0:2),GDNu(2,0:2)
         double precision :: homP(0:Nord-1),homPal(0:Nord-1,0:Nord-1)
+        double precision :: jac
 c
 c    ...debugging flag
         iprint=0
@@ -816,14 +819,15 @@ c      ...construct the shape functions
 c      ...get homogenized Legendre polynomials, homP
           call HomLegendre(GNu(0:1),maxI, homP)
 c      ...get homogenized Jacobi polynomials, homPal
-          call HomJacobi((/GNu(0)+GNu(1),GNu(2)/),maxJ,minalpha, 
+          call HomJacobi((/GNu(0)+GNu(1),GNu(2)/),maxJ,minalpha,
      .                                                         homPal)
           do nij=minIJ,maxIJ
             do i=minI,nij-minJ
               j=nij-i
               m=m+1
 c
-              ShapV(m) = homP(i)*homPal(i,j)
+              call cross(N,GDNu(1:N,1),GDNu(1:N,2), jac)
+              ShapV(m) = homP(i)*homPal(i,j)*jac
             enddo
           enddo
         endif
@@ -859,6 +863,7 @@ c
         double precision :: Mu(2,0:1),DMu(2,2,0:1)
         double precision :: GMu(2,0:1),GDMu(2,2,0:1)
         double precision :: homP(2,0:MAXP-1)
+        double precision :: jac
 c
 c    ...debugging flag
         iprint=0
@@ -891,7 +896,8 @@ c      ...construct the shape functions
             do i=minI,maxI
               m=m+1
 c
-              ShapV(m) = homP(1,i)*homP(2,j)
+              call cross(N,GDMu(1:N,1,1),GDMu(1:N,2,1), jac)
+              ShapV(m) = homP(1,i)*homP(2,j)*jac
             enddo
           enddo
         endif

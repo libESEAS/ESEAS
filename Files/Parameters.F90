@@ -46,7 +46,7 @@ module parameters
 !                                  2D
 !----------------------------------------------------------------------
 !
-!  ...max number of local dof for a 2D quad element
+!  ...max number of local dof for a 2D quadrilateral element
   integer, parameter :: MAXquadH = (MAXP+1)**2
   integer, parameter :: MAXquadE = 2*MAXP*(MAXP+1)
   integer, parameter :: MAXquadV = MAXquadE
@@ -62,7 +62,7 @@ module parameters
 !                                  3D
 !----------------------------------------------------------------------
 !
-!  ...max number of local dof for a 3D brick element
+!  ...max number of local dof for a 3D hexahedral element
   integer, parameter :: MAXbrickH = (MAXP+1)**3
   integer, parameter :: MAXbrickE = 3*MAXP*(MAXP+1)**2
   integer, parameter :: MAXbrickV = 3*MAXP**2*(MAXP+1)
@@ -85,5 +85,44 @@ module parameters
   integer, parameter :: MAXpyramE = 8*MAXP+2*MAXP*(MAXP-1)+4*MAXP*(MAXP-1)+3*(MAXP-1)**2*MAXP
   integer, parameter :: MAXpyramV = MAXquadQ+4*MAXtriaQ+2*(MAXP-1)*MAXP**2+MAXP**3
   integer, parameter :: MAXpyramQ = MAXP**2*(MAXP+1)
+!
+!
+!----------------------------------------------------------------------
+!  ==== NODE ===
+!  ...maximum number of dof for triangle bubbles
+integer, parameter :: MAXmdltH=(MAXP-2)*(MAXP-1)/2
+integer, parameter :: MAXmdltE=(MAXP-1)*MAXP
+integer, parameter :: MAXmdltV=MAXmdltE
+integer, parameter :: MAXmdltQ=MAXP*(MAXP+1)/2
+!
+!  ...maximum number of dof for quadrilateral bubbles
+integer, parameter :: MAXmdlqH=(MAXP-1)**2
+integer, parameter :: MAXmdlqE=2*MAXP*(MAXP-1)
+integer, parameter :: MAXmdlqV=MAXmdlqE
+integer, parameter :: MAXmdlqQ=MAXP**2
+!
+!  ...maximum number of dof for hexahedral bubbles
+integer, parameter :: MAXmdlbH=(MAXP-1)**3
+integer, parameter :: MAXmdlbE=3*MAXP*(MAXP-1)**2
+integer, parameter :: MAXmdlbV=3*MAXP**2*(MAXP-1)
+integer, parameter :: MAXmdlbQ=MAXbrickQ
+!
+!  ...maximum number of dof for tetrahedral bubbles
+integer, parameter :: MAXmdlnH=(MAXP-3)*(MAXP-2)*(MAXP-1)/6
+integer, parameter :: MAXmdlnE=(MAXP-2)*(MAXP-1)*MAXP/2
+integer, parameter :: MAXmdlnV=(MAXP-1)*MAXP*(MAXP+1)/2
+integer, parameter :: MAXmdlnQ=MAXtetraQ
+!
+!  ...maximum number of dof for prism bubbles
+integer, parameter :: MAXmdlpH=MAXmdltH*(MAXP-1)
+integer, parameter :: MAXmdlpE=MAXmdltE*(MAXP-1)+MAXmdltH*MAXP
+integer, parameter :: MAXmdlpV=MAXmdltV*MAXP+MAXmdltQ*(MAXP-1)
+integer, parameter :: MAXmdlpQ=MAXprismQ
+!
+!  ...maximum number of dof for pyrmaid bubbles
+integer, parameter :: MAXmdldH=(MAXP-1)**3
+integer, parameter :: MAXmdldE=3*(MAXP-1)**2*MAXP
+integer, parameter :: MAXmdldV=3*(MAXP-1)*MAXP**2
+integer, parameter :: MAXmdldQ=MAXpyramQ
 !
 end module parameters
