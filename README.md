@@ -1,29 +1,29 @@
 The `ESEAS` Library
 =================
 
-`ESEAS` stands for Exact Sequence for Elements of All Shapes. By "Elements of All Shapes," we mean the following geometries in <img src="http://latex.codecogs.com/gif.latex?\mathbb{R}^n" border="0"/>, <img src="http://latex.codecogs.com/gif.latex?n=1,2,3." border="0"/>
+`ESEAS` stands for Exact Sequence for Elements of All Shapes. By "Elements of All Shapes," we mean the following geometries in <img src="http://latex.codecogs.com/svg.latex?\mathbb{R}^n" border="0"/>, <img src="http://latex.codecogs.com/svg.latex?n=1,2,3." border="0"/>
 
 ![ElementsAllShapes](https://cloud.githubusercontent.com/assets/10820180/6026267/0f6fe8d0-ab9f-11e4-9391-f86bd8ce80aa.png "Elements of all shapes.")
 
-Denote by <img src="http://latex.codecogs.com/gif.latex?\Omega" border="0"/>, any arbitrary element listed above. By "Exact sequence" we specifically mean the de Rham complexes in <img src="http://latex.codecogs.com/gif.latex?\Omega\subset\mathbb{R}^n" border="0"/>, <img src="http://latex.codecogs.com/gif.latex?n=1,2,3." border="0"/>
+Denote by <img src="http://latex.codecogs.com/svg.latex?\Omega" border="0"/>, any arbitrary element listed above. By "Exact sequence" we specifically mean the de Rham complexes in <img src="http://latex.codecogs.com/svg.latex?\Omega\subset\mathbb{R}^n" border="0"/>, <img src="http://latex.codecogs.com/svg.latex?n=1,2,3." border="0"/>
 
 i.e.
 
 -   **1D:**
 
-    <img src="http://latex.codecogs.com/gif.latex?H^1(\Omega)\stackrel{\nabla}{\longrightarrow}L^2(\Omega)\,." border="0"/>
+    <img src="http://latex.codecogs.com/svg.latex?H^1(\Omega)\stackrel{\nabla}{\longrightarrow}L^2(\Omega)\,." border="0"/>
 
 - **2D:**
 
-    <img src="http://latex.codecogs.com/gif.latex?H^1\xrightarrow{\,\,\nabla\,\,}H(\mathrm{curl}) \xrightarrow{\nabla\times}L^2\,." border="0"/>
+    <img src="http://latex.codecogs.com/svg.latex?H^1\xrightarrow{\,\,\nabla\,\,}H(\mathrm{curl}) \xrightarrow{\nabla\times}L^2\,." border="0"/>
 
     **Rotated 2D:**
 
-    <img src="http://latex.codecogs.com/gif.latex?H^1\xrightarrow{\mathrm{curl}}H(\mathrm{div})\xrightarrow{\,\nabla\cdot\,}L^2\,." border="0"/>
+    <img src="http://latex.codecogs.com/svg.latex?H^1\xrightarrow{\mathrm{curl}}H(\mathrm{div})\xrightarrow{\,\nabla\cdot\,}L^2\,." border="0"/>
 
 -   **3D:**
 
-    <img src="http://latex.codecogs.com/gif.latex?H^1\xrightarrow{\,\,\nabla\,\,}H(\mathrm{curl})\xrightarrow{\nabla\times}H(\mathrm{div})\xrightarrow{\,\nabla\cdot\,}L^2\,." border="0"/>
+    <img src="http://latex.codecogs.com/svg.latex?H^1\xrightarrow{\,\,\nabla\,\,}H(\mathrm{curl})\xrightarrow{\nabla\times}H(\mathrm{div})\xrightarrow{\,\nabla\cdot\,}L^2\,." border="0"/>
 
 For a more thorough account of these spaces, see the report mentioned in `Documentation` section.
 
