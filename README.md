@@ -41,7 +41,7 @@ At this moment, the all testing routines for ESEAS rely upon the HP3D finite ele
 Documentation
 -------------
 
-`ESEAS` is based off the shape function construction documented [here](http://dx.doi.org/10.1016/j.camwa.2015.04.027).
+`ESEAS` is based off the shape function construction documented [here](http://dx.doi.org/10.1016/j.camwa.2015.04.027) or [here](http://arxiv.org/abs/1504.03025).
 
 License
 -------
@@ -66,10 +66,9 @@ Please add the following citation to any paper, technical report, or article whi
 
 ```bibtex
 @article{Fuentes2015,
-  title = {{Orientation Embedded High Order Shape Functions for
-the Exact Sequence Elements of All Shapes}},
-  author = {Fuentes, Keith, Demkowicz, Nagaraj},
-  journal = {Computers \& Mathematics with Applications},
+  title = {Orientation embedded high order shape functions for the exact sequence elements of all shapes},
+  author = {Fuentes, F. and Keith, B. and Demkowicz, L. and Nagaraj, S.},
+  journal = {Comput. Math. Appl.},
   volume = {70},
   number = {4},
   pages = {353--458},
