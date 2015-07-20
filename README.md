@@ -29,7 +29,7 @@ For a more thorough account of these spaces, see the report mentioned in `Docume
 
 `ESEAS` is a collection of hierarchical shape function routines for finite element software. It is written in Fortran 90 but using fixed format (.F) so it is compatible down to Fortran 77. It is designed to be ported into pre-existing finite element softwares and has been tested using HP3D by the Electromagnetics and Acoustics Group at the Institute for Computational Engineering Sciences at The University of Texas at Austin.
 
-`ESEAS` is written for orientation embedded shape functions (see [Gatto 2010](http://www.sciencedirect.com/science/article/pii/S0168874X10000065)) but can used by finite element softwares which do not incorporate this feature.
+`ESEAS` is written for orientation embedded shape functions (see [Gatto 2010](http://dx.doi.org/10.1016/j.finel.2010.01.005)) but can used by finite element softwares which do not incorporate this feature.
 
 `ESEAS` is free to use *provided* that the library is cited (citation information below).
 
@@ -41,7 +41,7 @@ At this moment, the all testing routines for ESEAS rely upon the HP3D finite ele
 Documentation
 -------------
 
-`ESEAS` is based off the shape function construction documented [here](https://www.ices.utexas.edu/media/reports/2015/1507.pdf).
+`ESEAS` is based off the shape function construction documented [here](http://dx.doi.org/10.1016/j.camwa.2015.04.027).
 
 License
 -------
@@ -69,9 +69,11 @@ Please add the following citation to any paper, technical report, or article whi
   title = {{Orientation Embedded High Order Shape Functions for
 the Exact Sequence Elements of All Shapes}},
   author = {Fuentes, Keith, Demkowicz, Nagaraj},
-  journal = {ICES Report},
-  year = {2015}
+  journal = {Computers \& Mathematics with Applications},
+  volume = {70},
+  number = {4},
+  pages = {353--458},
+  year = {2015},
+  url = {http://dx.doi.org/10.1016/j.camwa.2015.04.027}
 }
 ```
-<!-- volume = {}, -->
-<!-- url = {http://dx.doi.org/10.1007/978-3-642-29737-3\_44}, -->
