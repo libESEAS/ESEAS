@@ -41,7 +41,7 @@ At this moment, the all testing routines for ESEAS rely upon the HP3D finite ele
 Documentation
 -------------
 
-`ESEAS` is based off the shape function construction documented [here](http://dx.doi.org/10.1016/j.camwa.2015.04.027) or [here](http://arxiv.org/abs/1504.03025).
+`ESEAS` is based off the shape function construction documented [here](http://dx.doi.org/10.1016/j.camwa.2015.04.027) and [here](http://arxiv.org/abs/1504.03025).
 
 License
 -------
