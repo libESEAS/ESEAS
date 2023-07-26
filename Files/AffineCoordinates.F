@@ -161,7 +161,7 @@ c  ...Define segment affine coordinates over the height
       MuZ(0) = 1.d0-zeta; MuZ(1) = zeta
 c  ...Don't divide by zero
       if (abs(MuZ(0)) < eps)  then
-        MuZ(0) = 1.d0-eps; MuZ(1) = eps
+        MuZ(0) = eps; MuZ(1) = 1.d0 - eps
       endif
 c  ...and their gradients
       DMuZ(1:3,0:1) = 0.d0
