@@ -982,8 +982,8 @@ c    ...construct shape functions, no need to orient
             m=m+1
             ijmax = max(i,j)
 c
-            call cross(N,DphiQuad(1:N,i,j),DMuZ(1:N,1), DphiQuadxDMuZ)
-            ShapV(1:N,m) = DphiQuadxDMuZ*MuZ(0)**(ijmax-1)
+            call cross(N,DphiQuad(1:N,i,j),DMuZ(1:N,0), DphiQuadxDMuZ)
+            ShapV(1:N,m) = DphiQuadxDMuZ*ijmax*MuZ(0)**(ijmax-1)
             DivV(m)      = 0
           enddo
         enddo
