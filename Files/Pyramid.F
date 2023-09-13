@@ -1038,14 +1038,15 @@ c    ...construct shape functions, no need to orient
         do j=minJ,maxJ
           do i=minI,maxI
             m=m+1
+            ijmax = max(i,j)
 c
             call cross(N,DphiE(1:N,i),DphiE2(1:N,j), vectmp1)
             call cross(N,DMuZ(1:N,0),phiE(i)*DphiE2(1:N,j)
      .                                 - DphiE(1:N,i)*phiE2(j), vectmp2)
             vectmp = MuZ(0)*(MuZ(0)*vectmp1+vectmp2)
-            ShapV(1:N,m) = MuZ(1)**(i-1)*vectmp
+            ShapV(1:N,m) = MuZ(1)**(ijmax-1)*vectmp
             call dot_product(DMuZ(1:N,1),vectmp, tmp)
-            DivV(m)      = (i-1)*MuZ(1)**(i-2)*tmp
+            DivV(m)      = (ijmax-1)*MuZ(1)**(ijmax-2)*tmp
           enddo
         enddo
       endif
