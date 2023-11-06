@@ -650,8 +650,8 @@ c    ...construct shape functions, no need to orient
             ijmax = max(i,j)
 c
             tmp = phiQuad(i,j)*MuZ(0)**(ijmax-1)
-            ShapE(1:N,m) = ijmax*tmp*DMuZ(1:N,1)
-            call cross(N,DphiQuad(1:N,i,j),DMuZ(1:N,1), DphiQuadxDMuZ)
+            ShapE(1:N,m) = ijmax*tmp*DMuZ(1:N,0)
+            call cross(N,DphiQuad(1:N,i,j),DMuZ(1:N,0), DphiQuadxDMuZ)
             CurlE(1:N,m) = ijmax*DphiQuadxDMuZ*MuZ(0)**(ijmax-1)
           enddo
         enddo
